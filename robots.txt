@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /enter-web/
+
+Sitemap: https://vaizo.jp/enter-web/sitemap.xml

@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+:root {
+  --ew-orange: #ff5a14;
+  --ew-orange-dark: #e94a08;
+  --ew-orange-soft: #fff1e8;
+  --ew-ink: #171717;
+  --ew-muted: #5f6368;
+  --ew-white: #ffffff;
+  --ew-ivory: #fff8f2;
+  --ew-gray: #f6f6f4;
+  --ew-border: #f0d8c8;
+  --ew-footer: #15191d;
+  --ew-footer-ink: #f7f7f4;
+
+  --ew-content-width: 1200px;
+  --ew-header-width: 1200px;
+  --ew-gutter-pc: 32px;
+  --ew-gutter-sp: 18px;
+
+  --ew-radius-small: 8px;
+  --ew-radius-medium: 14px;
+  --ew-radius-large: 22px;
+  --ew-radius-pill: 999px;
+
+  --ew-shadow-soft: none;
+  --ew-shadow-button: none;
+
+  --ew-font-sans: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+
+  --ew-breakpoint-tablet: 1024px;
+  --ew-breakpoint-mobile: 768px;
+}

@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+.ew-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 210px;
+  min-height: 52px;
+  padding: 0 24px;
+  border: 2px solid var(--ew-orange);
+  border-radius: var(--ew-radius-pill);
+  color: var(--ew-white);
+  background: var(--ew-orange);
+  box-shadow: var(--ew-shadow-button);
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 1.2;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.ew-button--header {
+  min-width: 294px;
+  min-height: 45px;
+  padding-inline: 24px;
+  font-size: 12px;
+}
+
+.ew-logo-placeholder,
+.ew-asset-placeholder {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 8px 14px;
+  border: 1px dashed #c7c0ba;
+  border-radius: var(--ew-radius-small);
+  color: #746b65;
+  background: #faf7f2;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.ew-logo-placeholder--header {
+  width: 214px;
+  min-height: 36px;
+}
+
+.ew-logo-placeholder--footer {
+  width: 236px;
+  min-height: 48px;
+  color: #d8d3ce;
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
+.ew-wordmark {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  color: #111;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 27px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.ew-wordmark span {
+  color: var(--ew-orange);
+  font-size: 35px;
+  font-style: italic;
+  letter-spacing: -0.08em;
+}
+
+.ew-wordmark--footer {
+  color: var(--ew-footer-ink);
+}
+
+.ew-asset-placeholder {
+  display: grid;
+  gap: 4px;
+  width: 100%;
+  min-height: 180px;
+  padding: 18px;
+}
+
+.ew-asset-placeholder strong,
+.ew-asset-placeholder span,
+.ew-asset-placeholder small {
+  display: block;
+}
+
+.ew-asset-placeholder strong {
+  color: var(--ew-orange);
+  font-size: 15px;
+}
+
+.ew-asset-placeholder small {
+  color: var(--ew-muted);
+  font-size: 12px;
+}
+
+@media (max-width: 1023px) {
+  .ew-button--header {
+    width: 100%;
+    min-width: 0;
+  }
+}
