@@ -85,7 +85,6 @@
   position: relative;
   display: block;
   padding-right: 31px;
-  border-right: 1px solid rgba(255, 255, 255, 0.28);
 }
 
 .ew-footer--full .ew-wordmark {
@@ -171,6 +170,13 @@
   font-size: 16.5px;
   font-weight: 600;
   line-height: 1.25;
+}
+
+.ew-footer__company-logo img {
+  display: block;
+  width: auto;
+  height: 40px;
+  object-fit: contain;
 }
 
 .ew-footer__column a {
@@ -567,6 +573,9 @@
 
 .ew-footer__character {
   display: block;
+  position: absolute;
+  left: 222px;
+  top: 132px;
   width: 118px;
   height: auto;
   border: 0;
