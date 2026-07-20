@@ -507,15 +507,8 @@
 }
 
 .ew-problem-cards h2::before {
-  content: "";
-  display: inline-block;
-  width: 9px;
-  height: 9px;
-  margin: 0 33px 25px;
-  border-radius: 50%;
-  background: var(--ew-orange);
-  box-shadow: 42px 0 0 var(--ew-orange), 84px 0 0 var(--ew-orange);
-  vertical-align: middle;
+  display: none;
+  content: none;
 }
 
 .ew-problem-cards h2 em {
@@ -1277,13 +1270,6 @@
   top: -29px;
   width: 18px;
   height: 18px;
-}
-
-.ew-results__sparkle--c {
-  right: 3px;
-  top: 31px;
-  width: 24px;
-  height: 24px;
 }
 
 .ew-case {
@@ -3349,51 +3335,6 @@
   inset: 11px;
 }
 
-.ew-worries__sparkles {
-  position: absolute;
-  left: 238px;
-  top: 246px;
-  z-index: 3;
-  width: 112px;
-  height: 74px;
-}
-
-.ew-worries__sparkles span {
-  position: absolute;
-  width: 21px;
-  height: 21px;
-  background: #ff990a;
-  clip-path: polygon(50% 0, 61% 39%, 100% 50%, 61% 61%, 50% 100%, 39% 61%, 0 50%, 39% 39%);
-}
-
-.ew-worries__sparkles span:nth-child(1) {
-  left: 22px;
-  top: 10px;
-  width: 25px;
-  height: 25px;
-}
-
-.ew-worries__sparkles span:nth-child(2) {
-  left: 38px;
-  top: 46px;
-  width: 34px;
-  height: 34px;
-}
-
-.ew-worries__sparkles span:nth-child(3) {
-  right: 6px;
-  top: 16px;
-  width: 28px;
-  height: 28px;
-}
-
-.ew-worries__sparkles span:nth-child(4) {
-  right: 0;
-  bottom: 0;
-  width: 14px;
-  height: 14px;
-}
-
 @media (max-width: 767px) {
   .ew-worries--comparison {
     height: auto;
@@ -3428,7 +3369,7 @@
 .ew-solution--reasons {
   position: relative;
   min-height: 0;
-  padding: 58px 30px 0;
+  padding: 58px 30px 36px;
   overflow: hidden;
   background: #fff;
   text-align: center;
@@ -3752,7 +3693,7 @@
   .ew-solution--reasons {
     min-height: 0;
     padding-top: 46px;
-    padding-bottom: 0;
+    padding-bottom: 36px;
   }
 
   .ew-solution__reasons-title {
@@ -3793,7 +3734,7 @@
 @media (max-width: 767px) {
   .ew-solution--reasons {
     min-height: 0;
-    padding: 38px 18px 0;
+    padding: 38px 18px 36px;
   }
 
   .ew-solution__reasons-title {
@@ -4110,58 +4051,17 @@
 .ew-final-cta__icon {
   position: relative;
   display: block;
-  width: 32px;
-  height: 32px;
+  width: 50px;
+  height: 50px;
   margin-bottom: 10px;
-  color: #ff4f0d;
+  background: url("../../assets/icons/final-cta-placeholder.png") center / contain no-repeat;
+  color: transparent;
 }
 
-.ew-final-cta__icon--gift::before {
-  position: absolute;
-  left: 4px;
-  top: 10px;
-  content: "";
-  width: 25px;
-  height: 19px;
-  border: 4px solid currentColor;
-  border-radius: 3px;
-}
-
-.ew-final-cta__icon--gift::after {
-  position: absolute;
-  left: 15px;
-  top: 3px;
-  content: "";
-  width: 4px;
-  height: 28px;
-  background: currentColor;
-  box-shadow: -9px 6px 0 -1px currentColor, 9px 6px 0 -1px currentColor;
-}
-
-.ew-final-cta__icon--download {
-  color: #fff;
-}
-
-.ew-final-cta__icon--download::before {
-  position: absolute;
-  left: 14px;
-  top: 2px;
-  content: "";
-  width: 4px;
-  height: 22px;
-  background: currentColor;
-}
-
-.ew-final-cta__icon--download::after {
-  position: absolute;
-  left: 7px;
-  top: 13px;
-  content: "";
-  width: 19px;
-  height: 19px;
-  border-right: 4px solid currentColor;
-  border-bottom: 4px solid currentColor;
-  transform: rotate(45deg);
+.ew-final-cta__icon::before,
+.ew-final-cta__icon::after {
+  display: none;
+  content: none;
 }
 
 .ew-final-cta__card strong {
@@ -4957,7 +4857,46 @@
 
 .ew-worries__enta--worried,
 .ew-worries__enta--happy {
-  width: 174px;
+  top: calc(50% + 10px);
+  width: 140px;
+}
+
+.ew-worries__panel--before .ew-worries__enta--worried {
+  width: 140px;
+}
+
+.ew-worries__panel--before .ew-worries__bubble {
+  width: 220px;
+  height: 90px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.ew-worries__panel--after .ew-worries__bubble {
+  width: 220px;
+  height: 90px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.ew-worries__panel--before .ew-worries__bubble--before-a,
+.ew-worries__panel--before .ew-worries__bubble--before-b {
+  top: 92px;
+}
+
+.ew-worries__panel--after .ew-worries__bubble--after-a,
+.ew-worries__panel--after .ew-worries__bubble--after-b {
+  top: 92px;
+}
+
+.ew-worries__panel--before .ew-worries__bubble--before-c,
+.ew-worries__panel--before .ew-worries__bubble--before-d {
+  bottom: 58px;
+}
+
+.ew-worries__panel--after .ew-worries__bubble--after-c,
+.ew-worries__panel--after .ew-worries__bubble--after-d {
+  bottom: 58px;
 }
 
 .ew-final-cta__enta {
@@ -4967,7 +4906,12 @@
 @media (max-width: 1023px) {
   .ew-worries__enta--worried,
   .ew-worries__enta--happy {
-    width: 150px;
+    top: calc(50% + 10px);
+    width: 140px;
+  }
+
+  .ew-worries__panel--before .ew-worries__enta--worried {
+    width: 140px;
   }
 }
 
@@ -5203,99 +5147,43 @@
 .ew-team-support__photo {
   display: block;
   flex: 0 0 auto;
-  width: 150px;
+  width: 100%;
   height: 150px;
-  margin: 14px auto 0;
-  border-radius: 6px;
+  margin: 0;
+  border-radius: 8px 8px 0 0;
   background-image: url("../../assets/members/team-strip-generated.png");
   background-repeat: no-repeat;
-  background-size: 750px 300px;
-  background-position-y: 0;
+  background-size: 1500px 600px;
+  background-position-y: top;
 }
 
 .ew-team-support__photo--one {
-  background-position: 0 0;
+  background-image: url("../../assets/members/member-vaizo-black-298x150.jpg");
+  background-size: cover;
+  background-position: center top;
 }
 
 .ew-team-support__photo--two {
-  background-position: -150px 0;
+  background-image: url("../../assets/members/member-sakurai-298x150.jpg");
+  background-size: cover;
+  background-position: center top;
 }
 
 .ew-team-support__photo--three {
-  background-position: -300px 0;
-}
-
-.ew-team-support__photo--four {
-  background-position: -450px 0;
-}
-
-.ew-team-support__photo--five {
   background-position: -600px 0;
 }
 
-.ew-team-support__icon {
-  position: relative;
-  display: grid;
-  place-items: center;
-  width: 46px;
-  height: 46px;
-  margin: 10px auto 8px;
-  border-radius: 50%;
-  background: #fff5ef;
+.ew-team-support__photo--four {
+  background-position: -900px 0;
 }
 
-.ew-team-support__icon::before {
-  content: "";
-  width: 24px;
-  height: 24px;
-  border: 3px solid var(--ew-orange);
-}
-
-.ew-team-support__icon--search::before {
-  border-radius: 50%;
-}
-
-.ew-team-support__icon--search::after {
-  position: absolute;
-  right: 16px;
-  bottom: 10px;
-  width: 10px;
-  height: 2px;
-  content: "";
-  border-radius: 999px;
-  background: var(--ew-orange);
-  transform: rotate(45deg);
-}
-
-.ew-team-support__icon--screen::before {
-  border-radius: 0;
-  box-shadow: 0 12px 0 -10px var(--ew-orange);
-}
-
-.ew-team-support__icon--pen::before {
-  width: 7px;
-  height: 21px;
-  border: 0;
-  border-radius: 4px;
-  background: var(--ew-orange);
-  transform: rotate(42deg);
-}
-
-.ew-team-support__icon--growth::before {
-  width: 19px;
-  height: 16px;
-  border: 0;
-  border-left: 4px solid var(--ew-orange);
-  border-bottom: 4px solid var(--ew-orange);
-  transform: skewY(-22deg);
-}
-
-.ew-team-support__icon--ai::before {
-  border-radius: 8px;
+.ew-team-support__photo--five {
+  background-position: -1200px 0;
 }
 
 .ew-team-support__card h3 {
   margin: 0 0 8px;
+  padding-top: 8px;
   color: var(--ew-orange);
   font-size: 15px;
   font-weight: 900;
@@ -5329,6 +5217,10 @@
 .ew-team-support__card dt,
 .ew-team-support__card dd {
   margin: 0;
+}
+
+.ew-team-support__card dt {
+  font-size: 20px;
 }
 
 .ew-team-support__card dd {
@@ -5421,7 +5313,7 @@
 }
 
 .ew-freedom__steps .ew-freedom-cat {
-  width: 75px;
-  height: 75px;
+  width: 140px;
+  height: 140px;
   background: url("../../assets/characters/enta-hero-thumbsup.png") center / contain no-repeat;
 }
