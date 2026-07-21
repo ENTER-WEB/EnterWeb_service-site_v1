@@ -2817,6 +2817,7 @@
   align-items: center;
   gap: 24px;
   margin: 0 auto 34px;
+  padding-bottom: 24px;
   color: #06152d;
   font-size: 35px;
   font-weight: 900;
@@ -2951,7 +2952,7 @@
 }
 
 .ew-worries__bubble--before-a {
-  left: 40px;
+  left: 35px;
   top: 106px;
 }
 
@@ -3762,7 +3763,7 @@
 .ew-final-cta--wide {
   position: relative;
   display: grid;
-  grid-template-columns: 190px minmax(330px, 1fr) 570px;
+  grid-template-columns: 170px 480px minmax(0, 1fr);
   gap: 32px;
   align-items: center;
   min-height: 192px;
@@ -4005,6 +4006,7 @@
   font-weight: 900;
   line-height: 1.45;
   letter-spacing: 0.035em;
+  white-space: nowrap;
 }
 
 .ew-final-cta--wide h2 em {
@@ -4108,7 +4110,7 @@
 
 @media (max-width: 1439px) and (min-width: 768px) {
   .ew-final-cta--wide {
-    grid-template-columns: 160px minmax(290px, 1fr) 520px;
+    grid-template-columns: 140px minmax(420px, 1fr) minmax(0, 460px);
     gap: 22px;
     padding-left: 38px;
     padding-right: 38px;
@@ -4147,6 +4149,7 @@
   .ew-final-cta--wide h2 {
     font-size: 24px;
     text-align: center;
+    white-space: normal;
   }
 
   .ew-final-cta--wide p {
@@ -4858,11 +4861,11 @@
 .ew-worries__enta--worried,
 .ew-worries__enta--happy {
   top: calc(50% + 10px);
-  width: 140px;
+  width: 250px;
 }
 
 .ew-worries__panel--before .ew-worries__enta--worried {
-  width: 140px;
+  width: 250px;
 }
 
 .ew-worries__panel--before .ew-worries__bubble {
@@ -4907,11 +4910,11 @@
   .ew-worries__enta--worried,
   .ew-worries__enta--happy {
     top: calc(50% + 10px);
-    width: 140px;
+    width: 250px;
   }
 
   .ew-worries__panel--before .ew-worries__enta--worried {
-    width: 140px;
+    width: 250px;
   }
 }
 
