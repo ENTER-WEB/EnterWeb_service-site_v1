@@ -4944,10 +4944,36 @@
   height: 50px;
   border: 0;
   border-radius: 0;
-  background: url("../../assets/icons/problem-placeholder.png") center / contain no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   color: transparent;
   font-size: 0;
   line-height: 0;
+}
+
+.ew-problem-cards__grid .ew-problem-icon--question {
+  background-image: url("../../assets/icons/ew-problem-icon%20ew-problem-icon--question.png");
+}
+
+.ew-problem-cards__grid .ew-problem-icon--image {
+  background-image: url("../../assets/icons/ew-problem-icon%20ew-problem-icon--image.png");
+}
+
+.ew-problem-cards__grid .ew-problem-icon--people {
+  background-image: url("../../assets/icons/ew-problem-icon%20ew-problem-icon--people.png");
+}
+
+.ew-problem-cards__grid .ew-problem-icon--calendar {
+  background-image: url("../../assets/icons/ew-problem-icon%20ew-problem-icon--calendar.png");
+}
+
+.ew-problem-cards__grid .ew-problem-icon--chat {
+  background-image: url("../../assets/icons/ew-problem-icon%20ew-problem-icon--chat.png");
+}
+
+.ew-problem-cards__grid .ew-problem-icon--device {
+  background-image: url("../../assets/icons/ew-problem-icon%20ew-problem-icon--device.png");
 }
 
 .ew-problem-cards__grid .ew-problem-icon::before {
@@ -5303,6 +5329,22 @@
   box-shadow: none;
 }
 
+.ew-freedom__steps .ew-freedom-icon--search {
+  background-image: url("../../assets/icons/ew-freedom-icon%20ew-freedom-icon--search.png");
+}
+
+.ew-freedom__steps .ew-freedom-icon--message {
+  background-image: url("../../assets/icons/ew-freedom-icon%20ew-freedom-icon--message.png");
+}
+
+.ew-freedom__steps .ew-freedom-icon--crown {
+  background-image: url("../../assets/icons/ew-freedom-icon%20ew-freedom-icon--crown.png");
+}
+
+.ew-freedom__steps .ew-freedom-icon--growth {
+  background-image: url("../../assets/icons/ew-freedom-icon%20ew-freedom-icon--growth.png");
+}
+
 .ew-freedom__steps .ew-freedom-icon::before,
 .ew-freedom__steps .ew-freedom-icon::after,
 .ew-freedom__steps .ew-freedom-cat::before,
@@ -5315,5 +5357,5 @@
 .ew-freedom__steps .ew-freedom-cat {
   width: 140px;
   height: 140px;
-  background: url("../../assets/characters/enta-hero-thumbsup.png") center / contain no-repeat;
+  background-image: url("../../assets/characters/ew-freedom-cat.png");
 }
