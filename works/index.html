@@ -6,8 +6,8 @@
   <link rel="icon" href="../favicon.ico" sizes="any">
   <link rel="shortcut icon" href="../favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
-  <title>【仮】制作実績 | V/ENTER WEB</title>
-  <meta name="description" content="【仮】制作実績ページです。正式SEO文言は未確定です。">
+  <title>制作実績 | V/ENTER WEB</title>
+  <meta name="description" content="V/ENTER WEBの制作実績をご紹介します。採用、集客、予約、問い合わせ改善につながった事例を掲載しています。">
   <link rel="canonical" href="https://vaizo.jp/enter-web/works/">
   <meta name="robots" content="noindex, nofollow">
   <link rel="stylesheet" href="../css/variables.css">
@@ -15,20 +15,221 @@
   <link rel="stylesheet" href="../css/components.css">
   <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/sections/works.css">
 </head>
-<body>
+<body class="ew-works-page">
   <header class="ew-header" data-ew-header>
     <div class="ew-header__inner">
-      <a class="ew-header__brand" href="../"><span class="ew-logo-placeholder ew-logo-placeholder--header">素材待ち：ヘッダー用ロゴ</span></a>
-      <button class="ew-header__menu" type="button" aria-controls="ewGlobalNav" aria-expanded="false" data-ew-menu-button><span></span><span></span><span></span><span class="ew-sr-only">メニュー</span></button>
+      <a class="ew-header__brand" href="../" aria-label="V/ENTER WEB TOP">
+        <span class="ew-wordmark"><span>V</span>/ENTER WEB</span>
+      </a>
+      <button class="ew-header__menu" type="button" aria-controls="ewGlobalNav" aria-expanded="false" data-ew-menu-button>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="ew-sr-only">メニュー</span>
+      </button>
       <nav class="ew-header__nav" id="ewGlobalNav" aria-label="グローバルナビゲーション" data-ew-nav>
-        <a href="../">サービス</a><a href="./">制作実績</a><a href="../pricing/">料金</a><a href="../#flow-ai">制作の流れ</a><a href="../ai-support/">サポート</a><a href="../#faq">よくある質問</a>
+        <a href="../">サービス</a>
+        <a href="./" aria-current="page">制作実績</a>
+        <a href="../pricing/">料金</a>
+        <a href="../ai-support/">サポート</a>
       </nav>
-      <a class="ew-button ew-button--header" href="../contact/">自社の課題を無料で整理する</a>
+      <a class="ew-button ew-button--header" href="../contact/">まずは無料で相談する</a>
     </div>
   </header>
-  <main><div class="ew-phase-placeholder"><strong>Phase 1</strong><span>制作実績ページ本体は未実装です。</span></div></main>
-  <footer class="ew-footer"><div class="ew-footer__inner"><span class="ew-logo-placeholder ew-logo-placeholder--footer">素材待ち：フッター用ロゴ</span><nav class="ew-footer__nav" aria-label="フッターナビゲーション"><a href="../">TOP</a><a href="./">制作実績</a><a href="../pricing/">料金シミュレーター</a><a href="../ai-support/">AIサポート</a><a href="../contact/">無料相談・お問い合わせ</a><a href="../privacy/">プライバシーポリシー</a></nav><small>© V/ENTER WEB Co., Ltd. All Rights Reserved.</small></div></footer>
+
+  <main class="ew-works-main">
+    <section class="ew-works-hero" aria-labelledby="worksHeroTitle">
+      <div class="ew-works-hero__inner">
+        <div class="ew-works-hero__copy">
+          <img class="ew-works-hero__cat ew-works-hero__cat--left" src="../assets/characters/enta-hero-thumbsup.png" alt="" aria-hidden="true">
+          <p class="ew-works-spark ew-works-spark--a" aria-hidden="true">✦</p>
+          <h1 id="worksHeroTitle">成果で選ばれる、<br><span>V</span>/ENTER WEBの<em>実績。</em></h1>
+          <p class="ew-works-hero__lead">採用・集客・営業の課題に合わせて、<br>伝わり方を整えた事例をご紹介します。</p>
+          <ul class="ew-works-hero__metrics" aria-label="成果指標">
+            <li><i aria-hidden="true">□</i><small>問い合わせ改善</small><strong>平均 <em>+179%</em></strong></li>
+            <li><i aria-hidden="true">◎</i><small>採用強化</small><strong>応募率 <em>2.4倍</em></strong></li>
+            <li><i aria-hidden="true">□</i><small>予約・団体予約</small><strong><em>+360.9%</em></strong></li>
+            <li><i aria-hidden="true">♨</i><small>公開後の運用改善</small><strong>満足度 <em>96%</em></strong></li>
+          </ul>
+        </div>
+        <div class="ew-works-hero__visual">
+          <div class="ew-monitor">
+            <div class="ew-monitor__screen">
+              <img src="../assets/works/ew-photo-dining.webp" alt="飲食店サイトの制作実績イメージ">
+              <div class="ew-monitor__overlay">
+                <span>Dining Bar V/ENTER</span>
+                <strong>大切なひとときを、<br>心地よい空間で。</strong>
+              </div>
+            </div>
+          </div>
+          <div class="ew-works-hero__bubble">自社でも<br>こう変わるかも!</div>
+          <img class="ew-works-hero__cat ew-works-hero__cat--right" src="../assets/characters/ew-worries__enta%20ew-worries__enta--happy.png" alt="" aria-hidden="true">
+        </div>
+      </div>
+    </section>
+
+    <nav class="ew-work-tabs" aria-label="実績カテゴリ">
+      <a class="is-active" href="#">すべて</a>
+      <a href="#">採用</a>
+      <a href="#">飲食・店舗</a>
+      <a href="#">コーポレート</a>
+      <a href="#">集客・LP</a>
+      <a href="#">リニューアル</a>
+    </nav>
+
+    <section class="ew-featured-case" aria-labelledby="featuredCaseTitle">
+      <div class="ew-section-heading ew-section-heading--featured">
+        <span aria-hidden="true">✦</span>
+        <h2 id="featuredCaseTitle">注目事例</h2>
+        <span aria-hidden="true">✦</span>
+      </div>
+      <div class="ew-featured-case__wrap">
+        <figure class="ew-featured-case__photo"><img src="../assets/works/ew-photo-dining.webp" alt="老舗ダイニングバーの店内"></figure>
+        <article class="ew-featured-card">
+          <div class="ew-featured-card__head">
+            <span>飲食・店舗</span>
+            <h3>老舗ダイニングバー｜貸切・問い合わせ導線の改善</h3>
+          </div>
+          <p>貸切予約・問い合わせ導線を見直し、予約フォームの最適化とコンテンツ設計を刷新。<br>わかりやすい導線で、問い合わせ数が大きく増加しました。</p>
+          <dl class="ew-featured-card__numbers">
+            <div><dt>問い合わせ数</dt><dd><b>23</b>件 <i>→</i> <em>106</em>件</dd></div>
+            <div><dt>前月比</dt><dd><em>+360.9%</em></dd></div>
+            <div><dt>メール</dt><dd><em>45</em>件</dd></div>
+            <div><dt>電話</dt><dd><em>25</em>件</dd></div>
+            <div><dt>見積</dt><dd><em>36</em>件</dd></div>
+          </dl>
+          <div class="ew-featured-card__bottom">
+            <ul>
+              <li><i aria-hidden="true">□</i><strong>課題整理</strong><small>目的と課題を丁寧にヒアリング</small></li>
+              <li><i aria-hidden="true">◎</i><strong>導線改善</strong><small>問い合わせ導線をシンプルに</small></li>
+              <li><i aria-hidden="true">⚙</i><strong>公開後も運用</strong><small>アクセス解析と改善を継続</small></li>
+            </ul>
+            <a href="#" class="ew-orange-button">詳しく見る</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="ew-work-list" aria-labelledby="workListTitle">
+      <div class="ew-section-heading">
+        <span aria-hidden="true">✦</span>
+        <h2 id="workListTitle">実績一覧</h2>
+        <span aria-hidden="true">✦</span>
+      </div>
+      <div class="ew-work-list__grid">
+        <article class="ew-work-card"><img src="../assets/works/manufacturing-generated.png" alt=""><span class="ew-work-card__tag ew-work-card__tag--blue">採用</span><h3>建設会社｜採用ページ改善</h3><p>仕事内容や魅力を整理し、応募につながる採用ページへ刷新しました。</p><strong>応募数<br><em>2.4倍</em></strong><a href="#">事例を見る</a><img class="ew-work-card__cat" src="../assets/characters/ew-worries__enta%20ew-worries__enta--happy.png" alt=""></article>
+        <article class="ew-work-card"><img src="../assets/members/team-strip-generated.png" alt=""><span class="ew-work-card__tag ew-work-card__tag--pink">集客・LP</span><h3>美容サロン｜LINE導線改善</h3><p>LINE登録から来店までの導線を最適化。リピーターが増えました。</p><strong>再来店率<br><em>アップ</em></strong><a href="#">事例を見る</a><img class="ew-work-card__cat" src="../assets/characters/enta-hero-thumbsup.png" alt=""></article>
+        <article class="ew-work-card"><img src="../assets/members/member-sakurai-298x150.jpg" alt=""><span class="ew-work-card__tag ew-work-card__tag--navy">コーポレート</span><h3>士業事務所｜信頼感の再設計</h3><p>専門性と実績を整理し、安心して相談できるサイトにリニューアル。</p><strong>相談数<br><em>1.8倍</em></strong><a href="#">事例を見る</a></article>
+        <article class="ew-work-card"><img src="../assets/members/member-hashimoto-298x150.jpg" alt=""><span class="ew-work-card__tag ew-work-card__tag--green">福祉・介護</span><h3>介護・福祉｜やさしく伝わるサイトへ</h3><p>ご家族にも伝わる言葉づかいと情報設計で、問い合わせが増えました。</p><strong>問い合わせ<br><em>増加</em></strong><a href="#">事例を見る</a><img class="ew-work-card__cat" src="../assets/characters/ew-worries__enta%20ew-worries__enta--happy.png" alt=""></article>
+        <article class="ew-work-card"><img src="../assets/works/ew-photo-dining.webp" alt=""><span class="ew-work-card__tag">飲食・店舗</span><h3>飲食店｜宴会・貸切ページ新設</h3><p>宴会・貸切専用ページを新設し、スムーズな予約・問い合わせを実現。</p><strong>団体予約<br><em>増</em></strong><a href="#">事例を見る</a></article>
+        <article class="ew-work-card"><img src="../assets/works/manufacturing-generated.png" alt=""><span class="ew-work-card__tag ew-work-card__tag--navy">コーポレート</span><h3>地域企業｜コーポレート刷新</h3><p>企業の強みを伝える構成とデザインで、商談化率が向上しました。</p><strong>商談化率<br><em>向上</em></strong><a href="#">事例を見る</a><img class="ew-work-card__cat" src="../assets/characters/enta-hero-thumbsup.png" alt=""></article>
+      </div>
+    </section>
+
+    <section class="ew-results-flow" aria-labelledby="resultsFlowTitle">
+      <div class="ew-section-heading ew-section-heading--center">
+        <span aria-hidden="true">✦</span>
+        <h2 id="resultsFlowTitle">成果につながる理由</h2>
+        <span aria-hidden="true">✦</span>
+      </div>
+      <ol class="ew-results-flow__list">
+        <li><b>1</b><i aria-hidden="true">⌕</i><h3>強みを整理する</h3><p>丁寧なヒアリングで、企業やお店の強み・価値を一緒に言語化します。</p></li>
+        <li><b>2</b><i aria-hidden="true">▣</i><h3>伝わる構成にする</h3><p>誰に、何を、どう伝えるかを設計し、伝わる構成とデザインにします。</p></li>
+        <li><b>3</b><i aria-hidden="true">↗</i><h3>行動導線を整える</h3><p>問い合わせや応募につながる導線を、シンプルで使いやすく整えます。</p></li>
+        <li><b>4</b><i aria-hidden="true">▥</i><h3>公開後も育てる</h3><p>公開後もデータを見ながら改善を重ね、成果を伸ばし続けます。</p></li>
+      </ol>
+      <img class="ew-results-flow__cat" src="../assets/characters/enta-hero-thumbsup.png" alt="" aria-hidden="true">
+    </section>
+
+    <section class="ew-voices" aria-labelledby="voicesTitle">
+      <div class="ew-section-heading ew-section-heading--center">
+        <span aria-hidden="true">✦</span>
+        <h2 id="voicesTitle">お客様の声</h2>
+        <span aria-hidden="true">✦</span>
+      </div>
+      <button class="ew-slider-arrow ew-slider-arrow--prev" type="button" aria-label="前へ">‹</button>
+      <div class="ew-voices__cards">
+        <article><img src="../assets/members/member-sakurai-298x150.jpg" alt=""><p>相談しやすく、何から変えるべきかが明確になった</p><small>建設会社 人事担当　A社 様</small></article>
+        <article><img src="../assets/members/team-member-one-298x150.png" alt=""><p>採用でもお客様対応でも、説明しやすくなった</p><small>美容サロン オーナー　B社 様</small></article>
+        <article><img src="../assets/members/member-hashimoto-298x150.jpg" alt=""><p>公開後も一緒に見てくれるので安心です</p><small>士業事務所 代表　C社 様</small></article>
+      </div>
+      <button class="ew-slider-arrow ew-slider-arrow--next" type="button" aria-label="次へ">›</button>
+      <div class="ew-voices__dots" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+    </section>
+
+    <section class="ew-works-numbers" aria-labelledby="numbersTitle">
+      <div class="ew-section-heading ew-section-heading--center">
+        <span aria-hidden="true">✦</span>
+        <h2 id="numbersTitle">数字で見る V/ENTER WEB</h2>
+        <span aria-hidden="true">✦</span>
+      </div>
+      <div class="ew-works-numbers__grid">
+        <article><i aria-hidden="true">▥</i><p>制作実績</p><strong>400<span>社以上</span></strong></article>
+        <article><i aria-hidden="true">◌</i><p>相談・提案</p><strong>すべて無料</strong></article>
+        <article><i aria-hidden="true">□</i><p>最短</p><strong>3<span>営業日でご提案</span></strong></article>
+        <article><i aria-hidden="true">◎</i><p>保守・運用で</p><strong>公開後もサポート</strong><img src="../assets/characters/enta-hero-thumbsup.png" alt=""></article>
+      </div>
+    </section>
+
+    <section class="ew-works-cta" aria-labelledby="worksCtaTitle">
+      <img src="../assets/characters/enta-hero-thumbsup.png" alt="" aria-hidden="true">
+      <div>
+        <h2 id="worksCtaTitle">自社でも、こう変わるかもしれない。<br>まずは無料で相談してみませんか?</h2>
+        <p>しつこい営業なし・相談のみOK・写真や原稿がなくても大丈夫</p>
+      </div>
+      <div class="ew-works-cta__buttons">
+        <a href="../contact/">自社に合う事例を相談する</a>
+        <a href="../contact/">無料で相談してみる</a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="ew-footer ew-footer--full">
+    <div class="ew-footer__inner">
+      <div class="ew-footer__brand">
+        <span class="ew-wordmark ew-wordmark--footer"><span>V</span>/ENTER WEB</span>
+        <p>伝わる・選ばれる・成果を生み出す、<br>WebとAIの力で、未来を変える会社へ。</p>
+        <ul class="ew-footer__social" aria-label="SNSリンク">
+          <li><a class="ew-footer__sns ew-footer__sns--line" href="#" aria-label="LINE"><img src="../assets/social/line-brand-icon.png" alt=""></a></li>
+          <li><a class="ew-footer__sns ew-footer__sns--instagram" href="#" aria-label="Instagram"><img src="../assets/social/instagram-glyph-gradient.svg" alt=""></a></li>
+          <li><a class="ew-footer__sns ew-footer__sns--x" href="#" aria-label="X"><img src="../assets/social/x-logo.svg" alt=""></a></li>
+        </ul>
+      </div>
+      <div class="ew-footer__columns" aria-label="フッターナビゲーション">
+        <nav class="ew-footer__column" aria-label="サービス">
+          <h2>サービス</h2>
+          <a href="./">制作実績</a>
+          <a href="../pricing/">料金</a>
+          <a href="../">サポート</a>
+          <a href="../ai-support/">AIサポート</a>
+        </nav>
+        <nav class="ew-footer__column" aria-label="サポート">
+          <h2>サポート</h2>
+          <a href="../ai-support/">NewsAI<span>（ニュース更新）</span></a>
+          <a href="../ai-support/">クチコミAI<span>（口コミ返信）</span></a>
+          <a href="../ai-support/">LINE AI<span>（LINE運用）</span></a>
+        </nav>
+        <nav class="ew-footer__column" aria-label="会社情報">
+          <h2>会社情報</h2>
+          <a href="#">会社概要</a>
+          <a href="../privacy/">プライバシーポリシー</a>
+          <a href="#">特定商取引法に基づく表記</a>
+        </nav>
+      </div>
+      <div class="ew-footer__company">
+        <h2 class="ew-footer__company-logo">
+          <img src="../assets/brand/vaizo-logo-white.png" alt="株式会社VAIZO">
+        </h2>
+        <p>宮城県仙台市青葉区中央四丁目1番26号</p>
+        <p class="ew-footer__map"><span aria-hidden="true"></span>Google Map</p>
+        <a class="ew-footer__contact" href="../contact/"><span aria-hidden="true"></span>お問い合わせ</a>
+        <img class="ew-footer__character" src="../assets/characters/enta-hero-thumbsup.png" alt="" aria-hidden="true">
+      </div>
+    </div>
+    <small class="ew-footer__copyright">© V/ENTER WEB All Rights Reserved.</small>
+  </footer>
   <script src="../js/main.js"></script>
 </body>
 </html>
