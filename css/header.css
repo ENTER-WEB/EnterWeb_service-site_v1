@@ -250,16 +250,50 @@
     height: 32px;
     min-width: 42px;
     min-height: 32px;
+    padding: 0;
+    border: 0;
     border-radius: 0;
-    background:
-      linear-gradient(var(--ew-orange), var(--ew-orange)) 0 1px / 42px 4px no-repeat,
-      linear-gradient(var(--ew-orange), var(--ew-orange)) 0 14px / 42px 4px no-repeat,
-      linear-gradient(var(--ew-orange), var(--ew-orange)) 0 27px / 42px 4px no-repeat;
+    background: transparent;
+    box-shadow: none;
+    transform: none;
   }
 
   .ew-mobile-menu-visual:focus-visible {
     outline: 2px solid var(--ew-orange);
     outline-offset: 5px;
+  }
+
+  .ew-mobile-menu-visual::before,
+  .ew-mobile-menu-visual::after,
+  .ew-header.is-menu-open .ew-mobile-menu-visual::before,
+  .ew-header.is-menu-open .ew-mobile-menu-visual::after {
+    content: none;
+    display: none;
+  }
+
+  .ew-mobile-menu-visual__bar {
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 42px;
+    height: 4px;
+    border-radius: 999px;
+    background: var(--ew-orange);
+    opacity: 1;
+    transform-origin: center;
+    transition: transform 0.2s ease, opacity 0.2s ease, top 0.2s ease;
+  }
+
+  .ew-mobile-menu-visual__bar:nth-of-type(1) {
+    top: 1px;
+  }
+
+  .ew-mobile-menu-visual__bar:nth-of-type(2) {
+    top: 14px;
+  }
+
+  .ew-mobile-menu-visual__bar:nth-of-type(3) {
+    top: 27px;
   }
 
   .ew-header.is-menu-open .ew-mobile-menu-visual {
@@ -269,16 +303,28 @@
     height: 34px;
     min-width: 34px;
     min-height: 34px;
-    background: linear-gradient(var(--ew-orange), var(--ew-orange)) center / 34px 4px no-repeat;
+    background: transparent;
+    transform: none;
+  }
+
+  .ew-header.is-menu-open .ew-mobile-menu-visual__bar {
+    width: 34px;
+    height: 4px;
+  }
+
+  .ew-header.is-menu-open .ew-mobile-menu-visual__bar:nth-of-type(1) {
+    top: 15px;
     transform: rotate(45deg);
   }
 
-  .ew-header.is-menu-open .ew-mobile-menu-visual::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(var(--ew-orange), var(--ew-orange)) center / 34px 4px no-repeat;
-    transform: rotate(90deg);
+  .ew-header.is-menu-open .ew-mobile-menu-visual__bar:nth-of-type(2) {
+    top: 15px;
+    opacity: 0;
+  }
+
+  .ew-header.is-menu-open .ew-mobile-menu-visual__bar:nth-of-type(3) {
+    top: 15px;
+    transform: rotate(-45deg);
   }
 
   .ew-header__nav {
