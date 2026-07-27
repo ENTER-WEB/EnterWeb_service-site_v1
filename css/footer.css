@@ -595,3 +595,283 @@
     display: none;
   }
 }
+
+@media (max-width: 767px) {
+  .ew-footer.ew-footer--full {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100vh;
+    height: 100svh;
+    min-height: 0;
+    max-height: 100svh;
+    overflow: hidden;
+    padding: clamp(23px, 4.2svh, 34px) 14px clamp(12px, 2.4svh, 20px);
+    box-sizing: border-box;
+    border-radius: 18px 18px 0 0;
+    color: #fff;
+    background:
+      radial-gradient(circle at 18% 0%, rgba(0, 80, 145, 0.24) 0 160px, transparent 161px),
+      radial-gradient(ellipse 360px 170px at 88% 101%, rgba(16, 46, 82, 0.55) 0 58%, transparent 59%),
+      radial-gradient(ellipse 380px 150px at 29% 95%, rgba(0, 12, 28, 0.58) 0 58%, transparent 59%),
+      linear-gradient(145deg, #061326 0%, #052040 52%, #041329 100%);
+  }
+
+  .ew-footer.ew-footer--full::before {
+    right: -128px;
+    bottom: 36px;
+    width: 420px;
+    height: 230px;
+    border-radius: 60% 0 0 0 / 74% 0 0 0;
+    background: linear-gradient(146deg, rgba(13, 47, 82, 0.54), rgba(7, 20, 38, 0.06) 72%);
+  }
+
+  .ew-footer.ew-footer--full::after {
+    display: none;
+    content: none;
+  }
+
+  .ew-footer--full > .ew-footer__inner {
+    position: static;
+    z-index: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 397px;
+    min-height: 0;
+    margin: 0 auto;
+    padding: 0;
+    gap: 0;
+  }
+
+  .ew-footer__brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  .ew-footer--full .ew-wordmark {
+    display: block;
+    margin: 0 auto;
+    color: #fff;
+    font-size: clamp(27px, min(8.8vw, 5svh), 38px);
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: 0.07em;
+    white-space: nowrap;
+  }
+
+  .ew-footer--full .ew-wordmark span {
+    color: #ff4f0d;
+    font-size: 1.48em;
+    letter-spacing: -0.13em;
+  }
+
+  .ew-footer__brand p {
+    margin: clamp(18px, 3.6svh, 28px) auto 0;
+    color: rgba(255, 255, 255, 0.94);
+    font-size: clamp(16px, min(5vw, 2.9svh), 23px);
+    font-weight: 400;
+    line-height: 1.7;
+    letter-spacing: 0;
+    text-align: center;
+    white-space: normal;
+  }
+
+  .ew-footer__social {
+    justify-content: center;
+    gap: clamp(18px, 6vw, 28px);
+    margin: clamp(22px, 4.2svh, 34px) 0 clamp(19px, 3.4svh, 28px);
+  }
+
+  .ew-footer__sns,
+  .ew-footer__sns img {
+    width: clamp(39px, min(12.6vw, 7.4svh), 56px);
+    height: clamp(39px, min(12.6vw, 7.4svh), 56px);
+  }
+
+  .ew-footer__sns {
+    border-radius: 10px;
+  }
+
+  .ew-footer__sns--x {
+    padding: clamp(8px, 2.7vw, 12px);
+  }
+
+  .ew-footer__columns {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .ew-footer__column {
+    position: relative;
+    min-height: clamp(48px, 9.3svh, 70px);
+    padding: 0;
+    border: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+  }
+
+  .ew-footer__column:first-child {
+    border-top: 0;
+  }
+
+  .ew-footer__column h2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: clamp(48px, 9.3svh, 70px);
+    margin: 0;
+    color: #fff;
+    font-size: clamp(20px, min(6.5vw, 3.8svh), 28px);
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0;
+  }
+
+  .ew-footer__column h2::after {
+    display: block;
+    width: 13px;
+    height: 13px;
+    margin-right: 10px;
+    content: "";
+    border-right: 3px solid currentColor;
+    border-bottom: 3px solid currentColor;
+    transform: rotate(45deg) translateY(-4px);
+  }
+
+  .ew-footer__column a {
+    display: none;
+  }
+
+  .ew-footer__company {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 0;
+    padding: clamp(21px, 4svh, 31px) 0 0;
+    border: 0;
+    text-align: center;
+  }
+
+  .ew-footer__company::before,
+  .ew-footer__company::after {
+    display: none;
+    content: none;
+  }
+
+  .ew-footer__company-logo {
+    display: block;
+    margin: 0 0 clamp(12px, 2.4svh, 18px);
+    color: #fff;
+    font-size: 0;
+    line-height: 1;
+  }
+
+  .ew-footer__company-logo img {
+    display: none;
+  }
+
+  .ew-footer__company-logo::after {
+    content: "株式会社VAIZO";
+    display: block;
+    color: #fff;
+    font-size: clamp(20px, min(6.5vw, 3.8svh), 30px);
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0;
+  }
+
+  .ew-footer__company p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.94);
+    font-size: clamp(16px, min(5.1vw, 2.9svh), 23px);
+    font-weight: 400;
+    line-height: 1.55;
+    letter-spacing: 0;
+    text-align: center;
+    white-space: normal;
+  }
+
+  .ew-footer__company .ew-footer__map {
+    display: none;
+  }
+
+  .ew-footer__contact {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(10px, 3.5vw, 16px);
+    width: min(100%, 334px);
+    min-height: clamp(54px, 10.8svh, 76px);
+    margin: clamp(18px, 3.4svh, 28px) auto 0;
+    border-radius: 999px;
+    color: #071326;
+    background: #fff;
+    font-size: clamp(20px, min(6.5vw, 3.8svh), 29px);
+    font-weight: 600;
+    line-height: 1;
+    text-decoration: none;
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.12);
+  }
+
+  .ew-footer__contact span {
+    width: clamp(22px, 7vw, 31px);
+    height: clamp(16px, 5vw, 22px);
+    border-width: 2px;
+  }
+
+  .ew-footer__contact span::before,
+  .ew-footer__contact span::after {
+    top: 2px;
+    width: clamp(14px, 4.5vw, 20px);
+    height: 2px;
+  }
+
+  .ew-footer__character {
+    position: absolute;
+    z-index: 3;
+    display: block;
+    right: clamp(24px, 7vw, 44px);
+    bottom: clamp(32px, 6.6svh, 58px);
+    left: auto;
+    top: auto;
+    width: clamp(104px, min(34vw, 20svh), 148px);
+    height: auto;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    object-fit: contain;
+    transform: none;
+  }
+
+  .ew-footer__copyright {
+    position: absolute;
+    z-index: 2;
+    right: 14px;
+    bottom: clamp(20px, 4.2svh, 35px);
+    left: 14px;
+    display: block;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 0;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+  }
+
+  .ew-footer__copyright::after {
+    content: "© VAIZO All Rights Reserved.";
+    font-size: clamp(15px, min(4.6vw, 2.7svh), 21px);
+  }
+}

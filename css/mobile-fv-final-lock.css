@@ -1134,6 +1134,7 @@
     width: calc(100vw - 30px) !important;
     max-width: 395px !important;
     margin: clamp(12px, 2.8svh, 32px) auto 0 !important;
+    transform: translateY(-15px) !important;
   }
 
   .ew-final-cta--wide .ew-final-cta__card {
@@ -1157,7 +1158,7 @@
   }
 
   .ew-final-cta--wide .ew-final-cta__card--outline {
-    min-height: clamp(82px, 15.8svh, 136px) !important;
+    min-height: clamp(62px, 11.8svh, 102px) !important;
     border: 1.5px solid var(--ew-orange) !important;
     box-shadow: 0 10px 17px rgba(128, 42, 0, .12) !important;
   }
