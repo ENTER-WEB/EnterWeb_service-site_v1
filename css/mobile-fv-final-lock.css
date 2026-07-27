@@ -460,3 +460,185 @@
     transform: rotate(-45deg) !important;
   }
 }
+
+@media (max-width: 424px) {
+  :root {
+    --ew-mobile-scale: 0.998;
+    --ew-mobile-height: 944px;
+  }
+
+  html,
+  body {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  .ew-header {
+    height: 72px !important;
+  }
+
+  .ew-header__inner {
+    width: 100vw !important;
+    max-width: none !important;
+    height: 72px !important;
+    min-height: 72px !important;
+  }
+
+  .ew-header__brand {
+    top: 15px !important;
+    left: 14px !important;
+    width: 122px !important;
+    max-width: 122px !important;
+    height: 36px !important;
+  }
+
+  .ew-header .ew-wordmark {
+    width: 122px !important;
+    font-size: 14px !important;
+  }
+
+  .ew-header .ew-wordmark span {
+    font-size: 29px !important;
+    vertical-align: -7px !important;
+  }
+
+  .ew-header__brand::after {
+    left: 25px !important;
+    top: 27px !important;
+    font-size: 7px !important;
+  }
+
+  .ew-header .ew-button--header {
+    top: 16px !important;
+    left: clamp(136px, 42vw, 184px) !important;
+    width: clamp(136px, 39.5vw, 154px) !important;
+    min-width: clamp(136px, 39.5vw, 154px) !important;
+    height: 34px !important;
+    min-height: 34px !important;
+    padding: 0 8px 0 26px !important;
+    font-size: clamp(9px, 2.6vw, 11px) !important;
+    letter-spacing: 0 !important;
+  }
+
+  .ew-header .ew-button--header::before {
+    left: 12px !important;
+    width: 11px !important;
+    height: 11px !important;
+  }
+
+  .ew-mobile-menu-visual,
+  .ew-header.is-menu-open .ew-mobile-menu-visual {
+    top: 20px !important;
+    right: 10px !important;
+    left: auto !important;
+    width: 33px !important;
+    min-width: 33px !important;
+    height: 27px !important;
+    min-height: 27px !important;
+  }
+
+  .ew-hero {
+    height: var(--ew-mobile-height) !important;
+    min-height: var(--ew-mobile-height) !important;
+    overflow: hidden !important;
+  }
+
+  .ew-hero__inner {
+    width: 425px !important;
+    max-width: none !important;
+    height: 946px !important;
+    min-height: 946px !important;
+    left: 50% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    transform: translateX(-50%) scale(var(--ew-mobile-scale)) !important;
+    transform-origin: top center !important;
+  }
+
+  .ew-hero__copy {
+    width: 425px !important;
+    max-width: none !important;
+  }
+
+  .ew-hero__actions,
+  .ew-hero__badges {
+    box-sizing: border-box !important;
+  }
+
+  .ew-problem-cards__inner,
+  .ew-worries.ew-worries--comparison .ew-worries__inner,
+  .ew-freedom__inner,
+  .ew-solution__inner,
+  .ew-results__inner,
+  .ew-team-support__inner,
+  .ew-final-cta__inner {
+    width: calc(100vw - 28px) !important;
+    max-width: 396px !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .ew-problem-cards__grid,
+  .ew-freedom__steps,
+  .ew-worries__comparison-stage {
+    left: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+
+  .ew-problem-cards__grid article,
+  .ew-freedom__step,
+  .ew-solution__card,
+  .ew-results__card {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+}
+
+@media (max-width: 400px) {
+  :root {
+    --ew-mobile-scale: 0.94;
+    --ew-mobile-height: 889px;
+  }
+}
+
+@media (max-width: 380px) {
+  :root {
+    --ew-mobile-scale: 0.894;
+    --ew-mobile-height: 846px;
+  }
+}
+
+@media (max-width: 360px) {
+  :root {
+    --ew-mobile-scale: 0.847;
+    --ew-mobile-height: 801px;
+  }
+}
+
+@media (max-width: 340px) {
+  :root {
+    --ew-mobile-scale: 0.8;
+    --ew-mobile-height: 757px;
+  }
+}
+
+@media (max-width: 330px) {
+  :root {
+    --ew-mobile-scale: 0.776;
+    --ew-mobile-height: 734px;
+  }
+}
+
+@media (max-width: 320px) {
+  :root {
+    --ew-mobile-scale: 0.753;
+    --ew-mobile-height: 713px;
+  }
+}

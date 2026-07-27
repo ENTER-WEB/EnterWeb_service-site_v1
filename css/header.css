@@ -8,6 +8,8 @@
   background: #fff;
 }
 
+
+
 .ew-header.is-scrolled {
   box-shadow: none;
 }
@@ -385,5 +387,100 @@
     background: transparent;
     opacity: 1;
     transform: translateY(-50%) rotate(45deg);
+  }
+}
+
+@media (max-width: 424px) {
+  body {
+    overflow-x: hidden !important;
+  }
+
+  .ew-header {
+    height: 72px !important;
+  }
+
+  .ew-header__inner {
+    width: 100vw !important;
+    max-width: none !important;
+    height: 72px !important;
+    min-height: 72px !important;
+    padding: 0 !important;
+  }
+
+  .ew-header__brand {
+    top: 15px !important;
+    left: 14px !important;
+    width: 122px !important;
+    max-width: 122px !important;
+    height: 36px !important;
+  }
+
+  .ew-header .ew-wordmark {
+    width: 122px !important;
+    font-size: 14px !important;
+  }
+
+  .ew-header .ew-wordmark span {
+    font-size: 29px !important;
+    vertical-align: -7px !important;
+  }
+
+  .ew-header__brand::after {
+    left: 25px !important;
+    top: 27px !important;
+    font-size: 7px !important;
+  }
+
+  .ew-header .ew-button--header {
+    top: 16px !important;
+    left: clamp(136px, 42vw, 184px) !important;
+    width: clamp(136px, 39.5vw, 154px) !important;
+    min-width: clamp(136px, 39.5vw, 154px) !important;
+    height: 34px !important;
+    min-height: 34px !important;
+    padding: 0 8px 0 26px !important;
+    font-size: clamp(9px, 2.6vw, 11px) !important;
+    letter-spacing: 0 !important;
+  }
+
+  .ew-header .ew-button--header::before {
+    left: 12px !important;
+    width: 11px !important;
+    height: 11px !important;
+  }
+
+  .ew-mobile-menu-visual,
+  .ew-header.is-menu-open .ew-mobile-menu-visual {
+    top: 20px !important;
+    right: 10px !important;
+    left: auto !important;
+    width: 33px !important;
+    min-width: 33px !important;
+    height: 27px !important;
+    min-height: 27px !important;
+  }
+
+  .ew-mobile-menu-visual__bar,
+  .ew-header.is-menu-open .ew-mobile-menu-visual__bar {
+    width: 33px !important;
+    height: 4px !important;
+  }
+
+  .ew-mobile-menu-visual__bar:nth-of-type(1) {
+    top: 0 !important;
+  }
+
+  .ew-mobile-menu-visual__bar:nth-of-type(2) {
+    top: 11px !important;
+  }
+
+  .ew-mobile-menu-visual__bar:nth-of-type(3) {
+    top: 22px !important;
+  }
+
+  .ew-header.is-menu-open .ew-mobile-menu-visual__bar:nth-of-type(1),
+  .ew-header.is-menu-open .ew-mobile-menu-visual__bar:nth-of-type(2),
+  .ew-header.is-menu-open .ew-mobile-menu-visual__bar:nth-of-type(3) {
+    top: 12px !important;
   }
 }
