@@ -783,8 +783,10 @@
 
 .ew-problem-cards__grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 13px;
+  width: min(100%, 606px);
+  margin-inline: auto;
 }
 
 .ew-problem-cards__grid article {
@@ -1473,6 +1475,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
   height: auto;
   padding-left: 0;
 }
@@ -1486,7 +1489,7 @@
 }
 
 .ew-results__head p {
-  margin: 0 0 22px;
+  margin: 0;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.7;
@@ -6285,13 +6288,13 @@
 .ew-team-support__board {
   position: relative;
   min-width: 0;
-  width: calc(100vw - ((100vw - min(var(--ew-content-width), calc(100vw - 64px))) / 2) - 335px - 34px);
+  width: min(928px, calc(100vw - ((100vw - min(var(--ew-content-width), calc(100vw - 64px))) / 2) - 335px - 34px));
   margin-right: calc((min(var(--ew-content-width), calc(100vw - 64px)) - 100vw) / 2);
 }
 
 .ew-team-support__cards {
   display: grid;
-  grid-template-columns: repeat(5, 300px);
+  grid-template-columns: repeat(3, calc((100% - 28px) / 3));
   gap: 14px;
   align-items: stretch;
   overflow-x: auto;
@@ -6309,7 +6312,7 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  width: 300px;
+  width: 100%;
   height: 300px;
   min-height: 300px;
   border: 1px solid #ececec;
@@ -6367,15 +6370,9 @@
 }
 
 .ew-team-support__photo--three {
-  background-position: -600px 0;
-}
-
-.ew-team-support__photo--four {
-  background-position: -900px 0;
-}
-
-.ew-team-support__photo--five {
-  background-position: -1200px 0;
+  background-image: url("../../assets/members/member-team-three.png");
+  background-size: cover;
+  background-position: 70% center;
 }
 
 .ew-team-support__card h3 {
@@ -6435,6 +6432,7 @@
   border-radius: 50%;
   background: #fff;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  display: none;
 }
 
 .ew-team-support__arrow::before {
@@ -6479,7 +6477,7 @@
   }
 
   .ew-team-support__cards {
-    grid-template-columns: repeat(5, 300px);
+    grid-template-columns: repeat(3, 300px);
     overflow-x: auto;
     padding-bottom: 10px;
   }

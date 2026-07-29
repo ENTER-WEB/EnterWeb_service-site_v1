@@ -1,0 +1,316 @@
+@charset "UTF-8";
+
+/*
+ * Final mobile layout guard.
+ * Keep full-bleed section backgrounds, while every primary content surface
+ * stays inside a minimum 15px viewport gutter.
+ */
+@media (max-width: 767px) {
+  :root {
+    --ew-mobile-gutter: 15px;
+    --ew-mobile-content: calc(100vw - (var(--ew-mobile-gutter) * 2));
+  }
+
+  .ew-header__inner {
+    width: var(--ew-mobile-content) !important;
+    max-width: none !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+
+  .ew-header__brand {
+    left: var(--ew-mobile-gutter) !important;
+  }
+
+  .ew-header .ew-button--header {
+    right: var(--ew-mobile-gutter) !important;
+    left: auto !important;
+  }
+
+  .ew-hero__title {
+    left: 50% !important;
+    width: min(var(--ew-mobile-content), 385px) !important;
+    max-width: min(var(--ew-mobile-content), 385px) !important;
+    transform: translateX(-50%) !important;
+  }
+
+  .ew-problem-cards__inner,
+  .ew-freedom__inner,
+  .ew-team-support__inner {
+    width: var(--ew-mobile-content) !important;
+    max-width: none !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    transform: none !important;
+  }
+
+  .ew-problem-cards__grid,
+  .ew-freedom__steps {
+    position: relative !important;
+    left: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    transform: none !important;
+  }
+
+  .ew-problem-cards__grid article,
+  .ew-freedom__step {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    box-sizing: border-box !important;
+    transform: none !important;
+  }
+
+  .ew-problem-cards__grid article b {
+    top: 12px !important;
+    left: 12px !important;
+  }
+
+  .ew-freedom__title,
+  .ew-freedom__lead {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .ew-freedom__title {
+    font-size: clamp(22px, 5.65vw, 24px) !important;
+    letter-spacing: -0.025em !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+    line-break: strict !important;
+  }
+
+  .ew-freedom__title span {
+    white-space: nowrap !important;
+  }
+
+  .ew-freedom__step h3,
+  .ew-freedom__step p {
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+    line-break: strict !important;
+  }
+
+  .ew-freedom__step:not(:last-child)::before,
+  .ew-freedom__step:not(:last-child)::after {
+    display: none !important;
+    content: none !important;
+  }
+
+  .ew-worries__comparison-title,
+  .ew-worries__comparison-stage {
+    width: min(var(--ew-mobile-content), 425px) !important;
+    max-width: min(var(--ew-mobile-content), 425px) !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    box-sizing: border-box !important;
+  }
+
+  .ew-worries__comparison-title {
+    padding-right: 34px !important;
+    padding-left: 34px !important;
+    overflow: visible !important;
+  }
+
+  .ew-worries__comparison-title::before {
+    left: 0 !important;
+  }
+
+  .ew-worries__comparison-title::after {
+    right: 0 !important;
+  }
+
+  .ew-worries__comparison-stage {
+    grid-template-columns: 1fr !important;
+    gap: 0 !important;
+  }
+
+  .ew-worries__panel {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: clamp(300px, calc(var(--ew-mobile-content) / 1.08), 366px) !important;
+    min-height: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .ew-worries__pill,
+  .ew-worries__pill--dark,
+  .ew-worries__pill--orange {
+    top: clamp(14px, 4vw, 18px) !important;
+    width: min(calc(100% - 30px), 282px) !important;
+    min-width: 0 !important;
+    height: clamp(34px, 10vw, 42px) !important;
+    padding: 0 12px !important;
+    font-size: clamp(12px, 3.7vw, 16px) !important;
+  }
+
+  .ew-worries__pill--dark {
+    width: min(70%, 220px) !important;
+  }
+
+  .ew-worries.ew-worries--comparison .ew-worries__panel .ew-worries__bubble {
+    width: calc(50% - 20px) !important;
+    min-width: 0 !important;
+    max-width: 154px !important;
+    min-height: clamp(70px, 20vw, 84px) !important;
+    height: auto !important;
+    padding: 8px 10px !important;
+    box-sizing: border-box !important;
+    font-size: clamp(11px, 3.25vw, 14px) !important;
+    line-height: 1.55 !important;
+  }
+
+  .ew-worries.ew-worries--comparison .ew-worries__bubble--before-a,
+  .ew-worries.ew-worries--comparison .ew-worries__bubble--after-a,
+  .ew-worries.ew-worries--comparison .ew-worries__bubble--before-c,
+  .ew-worries.ew-worries--comparison .ew-worries__bubble--after-c {
+    left: 12px !important;
+    right: auto !important;
+  }
+
+  .ew-worries.ew-worries--comparison .ew-worries__bubble--before-b,
+  .ew-worries.ew-worries--comparison .ew-worries__bubble--after-b,
+  .ew-worries.ew-worries--comparison .ew-worries__bubble--before-d,
+  .ew-worries.ew-worries--comparison .ew-worries__bubble--after-d {
+    right: 12px !important;
+    left: auto !important;
+  }
+
+  .ew-worries.ew-worries--comparison .ew-worries__bubble--before-a,
+  .ew-worries.ew-worries--comparison .ew-worries__bubble--before-b,
+  .ew-worries.ew-worries--comparison .ew-worries__bubble--after-a,
+  .ew-worries.ew-worries--comparison .ew-worries__bubble--after-b {
+    top: clamp(58px, 15vw, 72px) !important;
+  }
+
+  .ew-worries.ew-worries--comparison .ew-worries__bubble--before-c,
+  .ew-worries.ew-worries--comparison .ew-worries__bubble--before-d,
+  .ew-worries.ew-worries--comparison .ew-worries__bubble--after-c,
+  .ew-worries.ew-worries--comparison .ew-worries__bubble--after-d {
+    bottom: clamp(14px, 4vw, 20px) !important;
+  }
+
+  .ew-worries.ew-worries--comparison .ew-worries__enta {
+    top: 50% !important;
+    left: 50% !important;
+    width: clamp(150px, 44vw, 190px) !important;
+    height: clamp(150px, 44vw, 190px) !important;
+    transform: translate(-50%, -42%) !important;
+  }
+
+  .ew-worries.ew-worries--comparison .ew-worries__arrow {
+    width: 62px !important;
+    height: 58px !important;
+    margin: -12px auto !important;
+  }
+
+  .ew-team-support__board {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-right: 0 !important;
+  }
+
+  .ew-team-support__cards {
+    display: flex !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .ew-team-support__card {
+    flex: 0 0 min(300px, 100%) !important;
+    width: min(300px, 100%) !important;
+    max-width: 100% !important;
+  }
+
+  .ew-footer.ew-footer--full {
+    padding-right: var(--ew-mobile-gutter) !important;
+    padding-left: var(--ew-mobile-gutter) !important;
+  }
+
+  .ew-footer--full > .ew-footer__inner {
+    width: 100% !important;
+    max-width: 397px !important;
+  }
+}
+
+/* The 425px master composition needs its full content height. */
+@media (min-width: 425px) and (max-width: 767px) {
+  .ew-hero {
+    height: 946px !important;
+    min-height: 946px !important;
+  }
+
+  .ew-hero__inner {
+    height: 946px !important;
+    min-height: 946px !important;
+  }
+}
+
+/* Keep the device group above the CTA across the scalable phone layout. */
+@media (min-width: 331px) and (max-width: 767px) {
+  .ew-hero__devices {
+    top: 360px !important;
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 330px) {
+  .ew-hero__devices {
+    top: 237px !important;
+    left: var(--ew-mobile-gutter) !important;
+    right: auto !important;
+    width: var(--ew-mobile-content) !important;
+    max-width: var(--ew-mobile-content) !important;
+    transform: none !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .ew-freedom__step {
+    grid-template-columns: 80px minmax(0, 1fr) !important;
+    column-gap: 8px !important;
+    padding: 18px 10px !important;
+  }
+
+  .ew-freedom__circle {
+    width: 80px !important;
+    height: 80px !important;
+  }
+
+  .ew-freedom__step--cat .ew-freedom__circle {
+    width: 92px !important;
+    height: 92px !important;
+  }
+
+  .ew-freedom__steps .ew-freedom-icon {
+    width: 62px !important;
+    height: 62px !important;
+  }
+
+  .ew-freedom__steps .ew-freedom-cat {
+    width: 94px !important;
+    height: 94px !important;
+  }
+
+  .ew-freedom__step h3 {
+    font-size: 16px !important;
+  }
+
+  .ew-freedom__step p {
+    font-size: 12px !important;
+  }
+}

@@ -1,0 +1,435 @@
+@charset "UTF-8";
+
+/*
+ * 320px first-view lock
+ * The reference composition is isolated to narrow phone widths so the
+ * established 390px and tablet layouts keep their existing geometry.
+ */
+@media (min-width: 300px) and (max-width: 330px) {
+  .ew-header {
+    height: 52px !important;
+    min-height: 52px !important;
+  }
+
+  .ew-header__inner {
+    width: 100vw !important;
+    height: 52px !important;
+    min-height: 52px !important;
+  }
+
+  .ew-header__brand {
+    top: 12px !important;
+    left: 11px !important;
+    width: 116px !important;
+    max-width: 116px !important;
+    height: 34px !important;
+  }
+
+  .ew-header .ew-wordmark {
+    width: 116px !important;
+    font-size: 13px !important;
+  }
+
+  .ew-header .ew-wordmark span {
+    font-size: 28px !important;
+    vertical-align: -7px !important;
+  }
+
+  .ew-header__brand::after {
+    left: 24px !important;
+    top: 26px !important;
+    font-size: 6px !important;
+  }
+
+  .ew-header .ew-button--header {
+    top: 11px !important;
+    left: 148px !important;
+    width: 127px !important;
+    min-width: 127px !important;
+    height: 28px !important;
+    min-height: 28px !important;
+    padding: 0 15px 0 28px !important;
+    font-size: 9px !important;
+  }
+
+  .ew-header .ew-button--header::before {
+    left: 11px !important;
+    width: 10px !important;
+    height: 10px !important;
+  }
+
+  .ew-header .ew-button--header::after {
+    right: 10px !important;
+    width: 5px !important;
+    height: 5px !important;
+  }
+
+  .ew-mobile-menu-visual,
+  .ew-header.is-menu-open .ew-mobile-menu-visual {
+    top: 15px !important;
+    right: 11px !important;
+    width: 22px !important;
+    min-width: 22px !important;
+    height: 21px !important;
+    min-height: 21px !important;
+  }
+
+  .ew-mobile-menu-visual__bar,
+  .ew-header.is-menu-open .ew-mobile-menu-visual__bar {
+    width: 22px !important;
+    height: 3px !important;
+  }
+
+  .ew-mobile-menu-visual__bar:nth-of-type(1) {
+    top: 0 !important;
+  }
+
+  .ew-mobile-menu-visual__bar:nth-of-type(2) {
+    top: 9px !important;
+  }
+
+  .ew-mobile-menu-visual__bar:nth-of-type(3) {
+    top: 18px !important;
+  }
+
+  .ew-hero {
+    height: 676px !important;
+    min-height: 676px !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    background: #fff !important;
+  }
+
+  .ew-hero::before {
+    top: 244px !important;
+    right: -31px !important;
+    width: 70px !important;
+    height: 136px !important;
+    background-image: radial-gradient(rgba(255, 90, 20, 0.72) 1.1px, transparent 1.3px) !important;
+    background-size: 5px 5px !important;
+  }
+
+  .ew-hero::after {
+    position: absolute;
+    z-index: 12;
+    right: -5%;
+    bottom: -13px;
+    left: -5%;
+    height: 34px;
+    border-radius: 50% 50% 0 0 / 15px 15px 0 0;
+    content: "";
+    background: #ff4f08;
+    pointer-events: none;
+  }
+
+  .ew-hero__background {
+    z-index: 1 !important;
+    display: block !important;
+    height: 430px !important;
+    overflow: hidden !important;
+  }
+
+  .ew-hero__background::before,
+  .ew-hero__background::after {
+    position: absolute;
+    display: block;
+    width: 14px;
+    height: 14px;
+    content: "";
+    background: #ff720f;
+    clip-path: polygon(50% 0, 62% 38%, 100% 50%, 62% 62%, 50% 100%, 38% 62%, 0 50%, 38% 38%);
+  }
+
+  .ew-hero__background::before {
+    top: 65px;
+    left: 240px;
+  }
+
+  .ew-hero__background::after {
+    top: 188px;
+    right: 27px;
+    width: 16px;
+    height: 16px;
+  }
+
+  .ew-hero__orb {
+    display: block !important;
+    opacity: 1 !important;
+    background: linear-gradient(150deg, #ff9e27 0%, #ff4c08 62%, #ff4c08 100%) !important;
+  }
+
+  .ew-hero__orb--left {
+    top: 316px !important;
+    bottom: auto !important;
+    left: -70px !important;
+    width: 142px !important;
+    height: 170px !important;
+    border-radius: 50% !important;
+  }
+
+  .ew-hero__orb--right {
+    top: 290px !important;
+    right: -75px !important;
+    bottom: auto !important;
+    width: 150px !important;
+    height: 180px !important;
+    border-radius: 50% !important;
+  }
+
+  .ew-hero__dot-field {
+    display: none !important;
+  }
+
+  .ew-hero__inner {
+    position: relative !important;
+    left: 50% !important;
+    width: 320px !important;
+    max-width: none !important;
+    height: 676px !important;
+    min-height: 676px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    transform: translateX(-50%) !important;
+    transform-origin: top center !important;
+  }
+
+  .ew-hero__copy {
+    position: absolute !important;
+    inset: 0 auto auto 0 !important;
+    z-index: 6 !important;
+    width: 320px !important;
+    max-width: none !important;
+    height: 676px !important;
+    padding: 0 !important;
+  }
+
+  .ew-hero__ribbon {
+    top: 55px !important;
+    left: 22px !important;
+    width: 150px !important;
+    min-width: 150px !important;
+    height: 30px !important;
+    min-height: 30px !important;
+    padding: 0 8px !important;
+    border-radius: 3px !important;
+    font-size: 13px !important;
+    letter-spacing: 0.02em !important;
+    transform: rotate(-2.7deg) !important;
+  }
+
+  .ew-hero__ribbon::after {
+    left: 12px !important;
+    bottom: -6px !important;
+    border-width: 7px 6px 0 0 !important;
+  }
+
+  .ew-hero__title {
+    top: 90px !important;
+    left: 22px !important;
+    width: 282px !important;
+    max-width: 282px !important;
+    color: #171821 !important;
+    font-size: 26px !important;
+    line-height: 1.34 !important;
+    letter-spacing: 0 !important;
+    white-space: normal !important;
+    word-break: keep-all !important;
+    overflow-wrap: normal !important;
+  }
+
+  .ew-hero__title span,
+  .ew-hero__title em {
+    white-space: nowrap !important;
+  }
+
+  .ew-hero__title em {
+    font-size: 29px !important;
+    line-height: 1 !important;
+  }
+
+  .ew-hero__lead {
+    top: 166px !important;
+    left: 22px !important;
+    width: 244px !important;
+    max-width: 244px !important;
+    font-size: 11.5px !important;
+    font-weight: 700 !important;
+    line-height: 1.48 !important;
+    letter-spacing: 0.02em !important;
+  }
+
+  .ew-hero__visual {
+    position: absolute !important;
+    inset: 0 !important;
+    z-index: 3 !important;
+    width: 320px !important;
+    height: 454px !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+  }
+
+  .ew-hero__character,
+  .ew-hero__character.ew-enta {
+    top: 220px !important;
+    left: -1px !important;
+    z-index: 7 !important;
+    display: block !important;
+    width: 145px !important;
+    max-width: none !important;
+    height: auto !important;
+    transform: scaleX(-1) !important;
+    transform-origin: center center !important;
+  }
+
+  .ew-hero__support-badge {
+    top: 212px !important;
+    left: 114px !important;
+    right: auto !important;
+    z-index: 8 !important;
+    display: grid !important;
+    width: 91px !important;
+    height: 91px !important;
+    place-items: center !important;
+    border: 1px solid #d9a92d !important;
+    border-radius: 50% !important;
+    background: radial-gradient(circle at 42% 35%, #20201c 0, #0d0e0d 64%, #050606 100%) !important;
+    box-shadow: 0 2px 8px rgba(16, 12, 4, 0.22) !important;
+  }
+
+  .ew-hero__support-badge img {
+    display: none !important;
+  }
+
+  .ew-hero__support-badge::before {
+    position: static !important;
+    display: block !important;
+    width: 76px !important;
+    content: "事業の強みをサイトで\A Webで選ばれ、\A 選ばれる会社に！" !important;
+    color: #f3c83c !important;
+    background: none !important;
+    font-size: 7.2px !important;
+    font-weight: 900 !important;
+    line-height: 1.62 !important;
+    text-align: center !important;
+    white-space: pre-line !important;
+    clip-path: none !important;
+  }
+
+  .ew-hero__support-badge::after {
+    position: absolute !important;
+    right: 9px !important;
+    bottom: 5px !important;
+    display: block !important;
+    width: auto !important;
+    height: auto !important;
+    content: "✦  ·  ✦" !important;
+    color: #f0ad18 !important;
+    background: none !important;
+    font-size: 8px !important;
+    line-height: 1 !important;
+    clip-path: none !important;
+  }
+
+  .ew-hero__devices {
+    top: 257px !important;
+    left: 20px !important;
+    right: auto !important;
+    z-index: 4 !important;
+    display: block !important;
+    width: 300px !important;
+    max-width: none !important;
+    height: auto !important;
+    object-fit: contain !important;
+    transform: none !important;
+    filter: none !important;
+    -webkit-mask-image: none !important;
+    mask-image: none !important;
+  }
+
+  .ew-hero__actions {
+    top: 443px !important;
+    left: 16px !important;
+    z-index: 10 !important;
+    display: grid !important;
+    width: 288px !important;
+    max-width: 288px !important;
+    gap: 6px !important;
+    margin: 0 !important;
+  }
+
+  .ew-hero__button {
+    width: 288px !important;
+    min-width: 288px !important;
+    height: 28px !important;
+    min-height: 28px !important;
+    padding: 0 18px !important;
+    border-radius: 999px !important;
+    font-size: 11px !important;
+    box-shadow: none !important;
+  }
+
+  .ew-hero__button--primary {
+    gap: 8px !important;
+  }
+
+  .ew-hero__button--primary span {
+    font-size: 14px !important;
+  }
+
+  .ew-hero__badges {
+    top: 511px !important;
+    left: 16px !important;
+    z-index: 9 !important;
+    display: grid !important;
+    width: 288px !important;
+    max-width: 288px !important;
+    gap: 0 !important;
+    margin: 0 !important;
+    padding: 0 8px !important;
+    border: 1px solid #e6dfd9 !important;
+    border-radius: 5px !important;
+    background: rgba(255, 255, 255, 0.97) !important;
+    box-shadow: none !important;
+  }
+
+  .ew-hero__badges li {
+    display: grid !important;
+    grid-template-columns: 27px minmax(0, 1fr) !important;
+    grid-template-rows: auto auto !important;
+    column-gap: 8px !important;
+    min-height: 45px !important;
+    padding: 5px 0 !important;
+    align-content: center !important;
+    align-items: center !important;
+    border: 0 !important;
+    background: transparent !important;
+  }
+
+  .ew-hero__badges li + li {
+    border-top: 1px solid #e2ddd8 !important;
+  }
+
+  .ew-hero__badges li::before {
+    grid-row: 1 / 3 !important;
+    width: 22px !important;
+    height: 22px !important;
+    font-size: 15px !important;
+  }
+
+  .ew-hero__badges strong {
+    grid-column: 2 !important;
+    margin: 0 !important;
+    font-size: 10.5px !important;
+    line-height: 1.2 !important;
+    white-space: nowrap !important;
+  }
+
+  .ew-hero__badges span {
+    grid-column: 2 !important;
+    margin: 1px 0 0 !important;
+    font-size: 8px !important;
+    line-height: 1.3 !important;
+    white-space: nowrap !important;
+  }
+}

@@ -33,19 +33,19 @@
 <link rel="stylesheet" href="css/sections/hero.css">
 <link rel="stylesheet" href="css/mobile-final.css">
 <link rel="stylesheet" href="css/mobile-fv-final-lock.css">
+<link rel="stylesheet" href="css/mobile-fv-320.css">
+<link rel="stylesheet" href="css/tablet-fv.css">
+<link rel="stylesheet" href="css/tablet-results.css">
+<link rel="stylesheet" href="css/tablet-footer.css">
+<link rel="stylesheet" href="css/brand-wordmark.css">
+<link rel="stylesheet" href="css/mobile-layout-refresh.css">
 </head>
 <body>
   <header class="ew-header" data-ew-header>
     <div class="ew-header__inner">
-      <a class="ew-header__brand" href="./" aria-label="V/ENTER WEB TOP">
+      <a class="ew-header__brand" href="#top" aria-label="V/ENTER WEB TOP">
         <span class="ew-wordmark"><span>V</span>/ENTER WEB</span>
       </a>
-      <button class="ew-mobile-menu-visual" type="button" aria-controls="ewGlobalNav" aria-expanded="false" data-ew-menu-button style="position:fixed;top:20px;right:10px;z-index:1403;display:block;width:33px;height:27px;padding:0;border:0;background:transparent;">
-        <span class="ew-mobile-menu-visual__bar" aria-hidden="true" style="position:absolute;left:0;top:0;display:block;width:33px;height:4px;border-radius:999px;background:#b43a22;"></span>
-        <span class="ew-mobile-menu-visual__bar" aria-hidden="true" style="position:absolute;left:0;top:11px;display:block;width:33px;height:4px;border-radius:999px;background:#b43a22;"></span>
-        <span class="ew-mobile-menu-visual__bar" aria-hidden="true" style="position:absolute;left:0;top:22px;display:block;width:33px;height:4px;border-radius:999px;background:#b43a22;"></span>
-        <span class="ew-sr-only">メニュー</span>
-      </button>
       <nav class="ew-header__nav" id="ewGlobalNav" aria-label="グローバルナビゲーション" data-ew-nav>
         <div class="ew-mobile-drawer__brand" aria-hidden="true">
           <span class="ew-wordmark"><span>V</span>/ENTER WEB</span>
@@ -53,12 +53,12 @@
         </div>
         <div class="ew-mobile-drawer__ctas">
           <a class="ew-mobile-drawer__cta ew-mobile-drawer__cta--primary" href="contact/">まずは無料で相談する</a>
-          <a class="ew-mobile-drawer__cta ew-mobile-drawer__cta--secondary" href="works/">実績を見る</a>
+          <a class="ew-mobile-drawer__cta ew-mobile-drawer__cta--secondary" href="#results">実績を見る</a>
         </div>
-        <a href="./">サービス</a>
-        <a href="works/" aria-current="page">制作実績</a>
-        <a href="pricing/">料金</a>
-        <a href="ai-support/">サポート</a>
+        <a href="#problems">お悩み</a>
+        <a href="#solution">サービス</a>
+        <a href="#results">制作実績</a>
+        <a href="#team-support">サポート体制</a>
         <div class="ew-mobile-drawer__support">
           <strong>エンターくんのAIサポート</strong>
           <span>サービスやWebに関するご質問に24時間いつでもお答えします！</span>
@@ -67,7 +67,7 @@
           <a href="privacy/">プライバシーポリシー</a>
           <a href="sitemap.xml">サイトマップ</a>
         </div>
-        <p class="ew-mobile-drawer__copyright">© V/ENTER WEB All Rights Reserved.</p>
+        <p class="ew-mobile-drawer__copyright">© VAIZO All Rights Reserved.</p>
       </nav>
       <a class="ew-button ew-button--header" href="contact/">まずは無料で相談する</a>
     </div>
@@ -97,7 +97,7 @@
               <span aria-hidden="true">□</span>
               まずは無料で相談する
             </a>
-            <a class="ew-button ew-hero__button ew-hero__button--secondary" href="works/">
+            <a class="ew-button ew-hero__button ew-hero__button--secondary" href="#results">
               実績を見る
             </a>
           </div>
@@ -107,7 +107,7 @@
           <div class="ew-hero__support-badge">
             <img src="assets/mockups/ew-hero__support-badge.png" alt="事業の強みをサイトで Webで選ばれ、選ばれる会社に！">
           </div>
-          <img class="ew-hero__devices" src="assets/mockups/hero-devices-latest.png" alt="PCとスマートフォンで表示されたWebサイトのモックアップ">
+          <img class="ew-hero__devices" src="assets/mockups/hero-devices-pc-20260729.png" alt="PCとスマートフォンで表示されたWebサイトのモックアップ">
           <div class="ew-hero__mockup ew-hero__mockup--desktop ew-laptop">
             <div class="ew-laptop__screen">
               <span class="ew-mini-logo"><b>V</b>/ENTER WEB</span>
@@ -135,7 +135,7 @@
       </div>
     </section>
 
-    <section class="ew-problem-cards" aria-labelledby="ewProblemCardsTitle">
+    <section class="ew-problem-cards" id="problems" aria-labelledby="ewProblemCardsTitle">
       <div class="ew-problem-cards__inner">
         <h2 id="ewProblemCardsTitle">こんな<em>お悩み</em>、ありませんか？</h2>
         <div class="ew-problem-cards__mascot" aria-hidden="true">
@@ -301,13 +301,12 @@
       </div>
     </section>
 
-    <section class="ew-results" aria-labelledby="ewResultsTitle">
+    <section class="ew-results" id="results" aria-labelledby="ewResultsTitle">
       <div class="ew-results__head">
         <span class="ew-results__sparkle ew-results__sparkle--a" aria-hidden="true"></span>
         <span class="ew-results__sparkle ew-results__sparkle--b" aria-hidden="true"></span>
         <h2 id="ewResultsTitle">成果につながった<br>一例をご紹介します</h2>
         <p>V/ENTER WEBは、業種や規模を問わず、<br>多くの企業様の「伝わる化」と<br>「成果の最大化」を実現しています。</p>
-        <a href="works/">すべての事例を見る<span aria-hidden="true">→</span></a>
       </div>
       <article class="ew-case">
         <div class="ew-case__body">
@@ -343,7 +342,7 @@
       </ul>
     </section>
 
-    <section class="ew-team-support" aria-labelledby="ewTeamSupportTitle">
+    <section class="ew-team-support" id="team-support" aria-labelledby="ewTeamSupportTitle">
       <div class="ew-team-support__inner">
         <div class="ew-team-support__copy">
           <p class="ew-team-support__eyebrow"><span aria-hidden="true"></span>人で選べる安心感</p>
@@ -377,25 +376,9 @@
             <article class="ew-team-support__card">
               <span class="ew-team-support__photo ew-team-support__photo--three" aria-hidden="true"></span>
               <h3>デザイン・制作</h3>
-              <p>見やすく・伝わるデザインで<br>魅力を最大限に表現します。</p>
+              <p>株式会社OneBe <br>代表取締役社長</p>
               <dl>
-                <div><dt>中村 翔太</dt></div>
-              </dl>
-            </article>
-            <article class="ew-team-support__card">
-              <span class="ew-team-support__photo ew-team-support__photo--four" aria-hidden="true"></span>
-              <h3>公開後の改善・運用</h3>
-              <p>データを見ながら改善提案・<br>運用サポートを行います。</p>
-              <dl>
-                <div><dt>加藤 美咲</dt></div>
-              </dl>
-            </article>
-            <article class="ew-team-support__card">
-              <span class="ew-team-support__photo ew-team-support__photo--five" aria-hidden="true"></span>
-              <h3>AI運用・保守支援</h3>
-              <p>AIを活用した運用・保守で<br>Webの成果を支え続けます。</p>
-              <dl>
-                <div><dt>鈴木 大輔</dt></div>
+                <div><dt>舛谷 一成</dt></div>
               </dl>
             </article>
           </div>
@@ -438,18 +421,30 @@
         </ul>
       </div>
       <div class="ew-footer__columns" aria-label="フッターナビゲーション">
-        <nav class="ew-footer__column" aria-label="サービス">
+        <nav class="ew-footer__column ew-footer__column--tablet-only" aria-label="サービス">
           <h2>サービス</h2>
+          <a href="#solution">制作の流れ</a>
           <a href="works/">制作実績</a>
           <a href="pricing/">料金</a>
-          <a href="./">サポート</a>
+          <a href="#team-support">サポート</a>
           <a href="ai-support/">AIサポート</a>
         </nav>
-        <nav class="ew-footer__column" aria-label="サポート">
+        <nav class="ew-footer__column ew-footer__column--tablet-only" aria-label="制作実績">
+          <h2>制作実績</h2>
+          <a href="works/">飲食・店舗</a>
+          <a href="works/">建設・工務</a>
+          <a href="works/">美容・サロン</a>
+          <a href="works/">士業・専門家</a>
+          <a href="works/">医療・福祉</a>
+          <a href="works/">地域・団体</a>
+          <a href="works/">コーポレート</a>
+        </nav>
+        <nav class="ew-footer__column ew-footer__column--tablet-only" aria-label="サポート">
           <h2>サポート</h2>
           <a href="ai-support/">NewsAI<span>（ニュース更新）</span></a>
           <a href="ai-support/">クチコミAI<span>（口コミ返信）</span></a>
           <a href="ai-support/">LINE AI<span>（LINE運用）</span></a>
+          <a href="#footer">よくある質問</a>
         </nav>
         <nav class="ew-footer__column" aria-label="会社情報">
           <h2>会社情報</h2>
@@ -459,16 +454,13 @@
         </nav>
       </div>
       <div class="ew-footer__company">
-        <h2 class="ew-footer__company-logo">
-          <img src="assets/brand/vaizo-logo-white.png" alt="株式会社VAIZO">
-        </h2>
-        <p>宮城県仙台市青葉区中央四丁目1番26号</p>
-        <p class="ew-footer__map"><span aria-hidden="true"></span>Google Map</p>
+        <h2 class="ew-footer__company-logo">株式会社VAIZO</h2>
+        <p>宮城県仙台市青葉区<br class="ew-footer__tablet-break">中央四丁目1番26号</p>
         <a class="ew-footer__contact" href="contact/"><span aria-hidden="true"></span>お問い合わせ</a>
-        <img class="ew-footer__character" src="assets/characters/enta-hero-thumbsup.png" alt="" aria-hidden="true">
+        <img class="ew-footer__character" src="assets/characters/ew-worries__enta ew-worries__enta--happy.png" alt="" aria-hidden="true">
       </div>
     </div>
-    <small class="ew-footer__copyright">© V/ENTER WEB All Rights Reserved.</small>
+    <small class="ew-footer__copyright">© VAIZO All Rights Reserved.</small>
   </footer>
 
   <script src="js/main.js"></script>

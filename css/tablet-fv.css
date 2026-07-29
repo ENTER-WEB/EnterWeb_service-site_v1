@@ -1,0 +1,192 @@
+@charset "UTF-8";
+
+@media (min-width: 900px) and (max-width: 1100px) {
+  .ew-hero {
+    height: clamp(650px, 66.6667vw, 733px);
+    min-height: 0;
+  }
+
+  .ew-hero__inner {
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    grid-template-columns: 50% 50%;
+  }
+
+  .ew-hero__copy {
+    min-height: 0;
+    padding: 102px 0 0 19vw;
+  }
+
+  .ew-hero__ribbon {
+    width: 230px;
+    min-width: 0;
+    height: 42px;
+    min-height: 42px;
+    margin: 0 0 48px -48px;
+    padding: 0 7px;
+    border-radius: 5px;
+    font-size: 17px;
+    white-space: nowrap;
+  }
+
+  .ew-hero__ribbon::after {
+    left: 18px;
+    bottom: -8px;
+    border-width: 8px 8px 0 0;
+  }
+
+  .ew-hero__title {
+    width: 430px;
+    font-size: 42px;
+    line-height: 1.2;
+  }
+
+  .ew-hero__lead {
+    width: 340px;
+    margin-top: 28px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .ew-hero__actions {
+    width: auto;
+    height: 53px;
+    margin: 30px 0 0;
+    gap: 15px;
+  }
+
+  .ew-hero__button {
+    min-height: 53px;
+    padding: 0 14px;
+    border-radius: 9px;
+    font-size: 14px;
+  }
+
+  .ew-hero__button--primary {
+    flex: 0 0 190px;
+    width: 190px;
+    min-width: 190px;
+    gap: 8px;
+  }
+
+  .ew-hero__button--secondary {
+    flex: 0 0 122px;
+    width: 122px;
+    min-width: 122px;
+  }
+
+  .ew-hero__visual {
+    min-height: 0;
+    height: 100%;
+  }
+
+  .ew-hero__devices {
+    top: 105px;
+    right: auto;
+    left: 16px;
+    width: 510px;
+    height: 460px;
+    object-fit: fill;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+
+  .ew-hero__support-badge {
+    top: 58px;
+    right: 24px;
+    width: 136px;
+    height: 136px;
+    overflow: hidden;
+    border: 1px solid #e5b900;
+    border-radius: 50%;
+    background: #111;
+  }
+
+  .ew-hero__support-badge img {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+
+  .ew-hero__support-badge::before,
+  .ew-hero__support-badge::after {
+    position: absolute;
+    left: 50%;
+    z-index: 1;
+    display: block;
+    width: 116px;
+    color: #f3c600;
+    font-weight: 900;
+    text-align: center;
+    white-space: pre-line;
+    transform: translateX(-50%);
+  }
+
+  .ew-hero__support-badge::before {
+    top: 34px;
+    content: "事業の強みをサイトで";
+    font-size: 10px;
+    line-height: 1.4;
+  }
+
+  .ew-hero__support-badge::after {
+    top: 58px;
+    content: "Webで選ばれ、\A 選ばれる会社に！";
+    font-size: 15px;
+    line-height: 1.55;
+  }
+
+  .ew-hero__character,
+  .ew-hero__character.ew-enta {
+    position: absolute;
+    top: 214px;
+    left: -530px;
+    width: 250px;
+    height: 250px;
+    max-width: none;
+    object-fit: contain;
+    transform: none;
+  }
+
+  .ew-hero__badges {
+    left: 50%;
+    right: auto;
+    bottom: 88px;
+    width: 640px;
+    height: 56px;
+    transform: translateX(-50%);
+  }
+
+  .ew-hero__badges li {
+    min-height: 56px;
+    padding: 0 14px 0 24px;
+    border-left: 1px solid #d7d7d7;
+  }
+
+  .ew-hero__badges li:first-child {
+    border-left: 0;
+  }
+
+  .ew-hero__badges li::before {
+    top: 1px;
+    width: 15px;
+    height: 15px;
+  }
+
+  .ew-hero__badges li::after {
+    left: 4px;
+    top: 5px;
+    width: 6px;
+    height: 4px;
+  }
+
+  .ew-hero__badges strong {
+    margin-bottom: 6px;
+    font-size: 14px;
+  }
+
+  .ew-hero__badges span {
+    font-size: 11px;
+  }
+}

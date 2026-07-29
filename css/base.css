@@ -37,6 +37,13 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.ew-problem-cards,
+.ew-solution,
+.ew-results,
+.ew-team-support {
+  scroll-margin-top: 90px;
+}
+
 img,
 picture,
 video,
