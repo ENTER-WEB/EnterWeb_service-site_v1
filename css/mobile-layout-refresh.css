@@ -5,10 +5,28 @@
  * Keep full-bleed section backgrounds, while every primary content surface
  * stays inside a minimum 15px viewport gutter.
  */
+.ew-header {
+  position: relative !important;
+  top: auto !important;
+  right: auto !important;
+  left: auto !important;
+}
+
+.ew-problem-cards,
+.ew-solution,
+.ew-results,
+.ew-team-support {
+  scroll-margin-top: 0;
+}
+
 @media (max-width: 767px) {
   :root {
     --ew-mobile-gutter: 15px;
     --ew-mobile-content: calc(100vw - (var(--ew-mobile-gutter) * 2));
+  }
+
+  body {
+    padding-top: 0 !important;
   }
 
   .ew-header__inner {
@@ -19,10 +37,12 @@
   }
 
   .ew-header__brand {
+    position: absolute !important;
     left: var(--ew-mobile-gutter) !important;
   }
 
   .ew-header .ew-button--header {
+    position: absolute !important;
     right: var(--ew-mobile-gutter) !important;
     left: auto !important;
   }
@@ -104,6 +124,33 @@
   .ew-freedom__step:not(:last-child)::after {
     display: none !important;
     content: none !important;
+  }
+
+  .ew-solution__reasons-title {
+    display: block !important;
+    width: var(--ew-mobile-content) !important;
+    max-width: var(--ew-mobile-content) !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    text-align: center !important;
+  }
+
+  .ew-solution__reasons-sp-break {
+    display: inline !important;
+  }
+
+  .ew-solution__reasons-title > span {
+    display: none !important;
+  }
+
+  .ew-solution__reasons-title em {
+    display: inline !important;
+  }
+
+  .ew-team-support__eyebrow {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
   }
 
   .ew-worries__comparison-title,

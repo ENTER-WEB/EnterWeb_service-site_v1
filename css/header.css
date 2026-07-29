@@ -99,10 +99,9 @@
   width: 13px;
   height: 12px;
   content: "";
-  border: 2px solid #fff;
-  border-top: 0;
-  border-radius: 2px;
-  transform: translateY(-33%);
+  border: 0;
+  background: url("../assets/icons/cta-gift-outline.png") center / 154% 154% no-repeat;
+  transform: translateY(-50%);
 }
 
 .ew-header .ew-button--header::after {
